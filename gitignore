@@ -1,0 +1,112 @@
+# ------------------------------
+# Python
+# ------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py.class
+
+# Byte-compiled / optimized / DLL files
+*.so
+*.dll
+*.dylib
+
+# Virtual environment
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+*.cover
+.cache
+nosetests.xml
+coverage/
+
+# Jupyter notebooks
+.ipynb_checkpoints
+
+# PyCharm / VSCode / IDE stuff
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ------------------------------
+# Flask specific
+# ------------------------------
+instance/
+*.db
+*.sqlite3
+*.sqlite
+
+# Flask cache / logs
+*.log
+*.bak
+
+# ------------------------------
+# Environment & Secrets
+# ------------------------------
+.env
+*.env
+.env.*
+*.pem
+*.key
+
+# ------------------------------
+# Node / React (if frontend present)
+# ------------------------------
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+
+# ------------------------------
+# OS Specific
+# ------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ------------------------------
+# Temporary / Backup Files
+# ------------------------------
+*.tmp
+*.swp
+*.swo
+*~
+~$*
+
+# ------------------------------
+# Project Specific
+# ------------------------------
+# Exclude uploads, data dumps, etc.
+uploads/
+certificates/
+data/
+__MACOSX/

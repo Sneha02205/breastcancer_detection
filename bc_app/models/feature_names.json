@@ -1,0 +1,61 @@
+{
+  "feature_names": [
+    "mean radius",
+    "mean texture",
+    "mean perimeter",
+    "mean area",
+    "mean smoothness",
+    "mean compactness",
+    "mean concavity",
+    "mean concave points",
+    "mean symmetry",
+    "mean fractal dimension",
+    "radius error",
+    "texture error",
+    "perimeter error",
+    "area error",
+    "smoothness error",
+    "compactness error",
+    "concavity error",
+    "concave points error",
+    "symmetry error",
+    "fractal dimension error",
+    "worst radius",
+    "worst texture",
+    "worst perimeter",
+    "worst area",
+    "worst smoothness",
+    "worst compactness",
+    "worst concavity",
+    "worst concave points",
+    "worst symmetry",
+    "worst fractal dimension"
+  ],
+  "target_names": [
+    "malignant",
+    "benign"
+  ],
+  "models": {
+    "logreg": {
+      "cv_mean": 0.9802197802197803,
+      "cv_std": 0.012815278889769896,
+      "acc": 0.9824561403508771,
+      "roc_auc": 0.9953703703703703,
+      "path": "C:\\Users\\prabh\\OneDrive\\Desktop\\Projects\\bc_app\\models\\breast_cancer_logreg.joblib"
+    },
+    "svm_rbf": {
+      "cv_mean": 0.9714285714285715,
+      "cv_std": 0.017855029460738386,
+      "acc": 0.9824561403508771,
+      "roc_auc": 0.9950396825396826,
+      "path": "C:\\Users\\prabh\\OneDrive\\Desktop\\Projects\\bc_app\\models\\breast_cancer_svm_rbf.joblib"
+    },
+    "rf": {
+      "cv_mean": 0.9582417582417584,
+      "cv_std": 0.02241327258722103,
+      "acc": 0.9473684210526315,
+      "roc_auc": 0.9937169312169313,
+      "path": "C:\\Users\\prabh\\OneDrive\\Desktop\\Projects\\bc_app\\models\\breast_cancer_rf.joblib"
+    }
+  }
+}
