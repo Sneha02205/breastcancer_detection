@@ -1,130 +1,50 @@
-.
+Breast Cancer Detection Web App
 
-🧠 Breast Cancer Detection using Machine Learning
-📌 Overview
+An AI-powered web application that predicts whether a tumor is benign or malignant using machine learning, helping in early detection and decision support.
 
-Breast Cancer Detection is a machine learning-based project designed to predict whether a tumor is benign or malignant using clinical features extracted from diagnostic data. The system helps in early detection by analyzing tumor characteristics and providing accurate classification results.
+Features
+1. Predicts breast cancer (Benign / Malignant) using ML model
+2. User-friendly interface for inputting medical parameters
+3. Real-time prediction with high accuracy (~95%+)
+4. Data preprocessing using NumPy & Pandas
+5. REST API integration with FastAPI
+6. Tech Stack
+   
+Frontend: HTML, CSS, JavaScript
+Backend: FastAPI
+ML Model: Scikit-learn
+Data Handling: NumPy, Pandas
 
-This project uses supervised learning algorithms trained on a medical dataset to assist in faster and more reliable diagnosis support.
-
-🚀 Features
-
-📊 Data preprocessing and feature selection
-
-🤖 Machine learning model training (Logistic Regression / SVM / Random Forest)
-
-📈 Model evaluation (Accuracy, Precision, Recall, F1-score)
-
-🔍 Predicts tumor type: Benign or Malignant
-
-💾 Model saving and loading
-
-🌐 Optional web interface using Flask
-
-🗂️ Project Structure
-breast-cancer-detection/
-│
-├── dataset/
-│   └── breast_cancer_data.csv
-│
-├── model/
-│   ├── train_model.py
+Project Structure
+breast-cancer-detector/
+│── frontend/
+│── backend/
+│   ├── main.py
 │   ├── model.pkl
-│
-├── app.py                 # Flask app (optional)
-├── requirements.txt
-└── README.md
-
-🧠 Dataset
-
-This project uses the Breast Cancer Wisconsin Dataset, which contains features such as:
-
-Radius
-
-Texture
-
-Perimeter
-
-Area
-
-Smoothness
-
-Compactness
-
-Concavity
-
-Symmetry
-
-Fractal dimension
-
-Target variable:
-
-0 → Malignant
-
-1 → Benign
-
-⚙️ Technologies Used
-
-Python 🐍
-
-Scikit-learn
-
-Pandas
-
-NumPy
-
-Matplotlib / Seaborn
-
-Flask (for deployment, optional)
-
-📊 Model Performance
-
-Example metrics (may vary based on model used):
-
-Accuracy: 96% – 99%
-
-Precision: High
-
-Recall: High
-
-F1-Score: Balanced
-
-🛠️ Installation & Setup
-1️⃣ Clone the repository
-git clone https://github.com/your-username/breast-cancer-detection.git
-cd breast-cancer-detection
-
-2️⃣ Install dependencies
+│   └── utils.py
+│── requirements.txt
+│── README.md
+ How It Works
+User enters tumor-related features
+Data is preprocessed using Pandas/NumPy
+ML model predicts the result
+Output displayed as Benign or Malignant
+Run Locally
+# Install dependencies
 pip install -r requirements.txt
 
-3️⃣ Train the model
-python model/train_model.py
+# Run FastAPI server
+uvicorn main:app --reload
 
-4️⃣ Run the Flask app (if included)
-python app.py
+Open: http://127.0.0.1:8000/docs
 
-🎯 How It Works
+Model Details
+Algorithm: Logistic Regression / Random Forest
+Dataset: Breast Cancer Wisconsin Dataset
+Accuracy: ~95% (can vary based on training)
 
-Load dataset
-
-Clean and preprocess data
-
-Split into training and testing sets
-
-Train machine learning model
-
-Evaluate performance
-
-Save model for future predictions
-
-📌 Future Improvements
-
-Deep learning implementation
-
-Hyperparameter tuning
-
-Deploy on cloud (Render / Heroku / AWS)
-
-Add a full-featured web dashboard
-
-Model explainability using SHAP
+Future Improvements
+Add visualization dashboard 
+Integrate explainable AI (SHAP/LIME)
+Deploy on cloud (AWS/GCP)
+Add user authentication
